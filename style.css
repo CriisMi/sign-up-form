@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    line-height: 1em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.logo {
+    min-width: 30%;
+    background-color: #ade9cd;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    flex: auto;
+    align-content: center;
+    background-color: #f5f5f5;
+}
+
+.intro {
+    padding: 0 50px;
+}
+
+.intro > p:last-child {
+    margin: 1em 0 50px 0;
+}
+
+form {
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+
+form > p:first-child {
+    font-size: large;
+    margin-bottom: 1em ;
+}
+
+.sign-in {
+    padding: 0 50px;
+}
