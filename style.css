@@ -152,3 +152,7 @@ button, input, select, textarea {
     width: 250px;
     color: #cc4949;
 }
+
+.form-row input[type='email']:valid {
+    outline: 0;
+}
