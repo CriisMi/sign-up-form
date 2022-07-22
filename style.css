@@ -22,15 +22,34 @@ body {
     background-repeat: no-repeat;
     background-color: #224736;
     background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    position: relative;
 }
 
-.credit,
+.credit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    color: #ffffff;
+}
+
 a {
     color: #ffffff;
-    margin-bottom: 15px;
+}
+
+.logo {
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 130px;
+    width: 100%;
+}
+
+img {
+    margin: 15px 0 15px 20%;
+    height: 100px;
+    width: auto;
 }
 
 .right-side {
