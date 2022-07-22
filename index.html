@@ -23,31 +23,63 @@
                 <div class="form-row-group">
                     <div class="form-row">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <input type="text" 
+                        id="first-name" 
+                        name="first-name" 
+                        placeholder=" "
+                        required>
                     </div>
                     <div class="form-row">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <input type="text" 
+                        id="last-name" 
+                        name="last-name" 
+                        placeholder=" "
+                        required>
                     </div>
                 </div>
                 <div class="form-row-group">
                     <div class="form-row">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder=" "
+                        required>
                     </div>
                     <div class="form-row">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="phone" required>
+                        <input type="tel" 
+                        name="phone-number" 
+                        id="phone" 
+                        placeholder=" "
+                        required>
                     </div>
                 </div>
                 <div class="form-row-group">
                     <div class="form-row">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" 
+                        name="password" 
+                        id="password" 
+                        placeholder=" "
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        required>
+                        <div class="requirements">
+                            Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+                        </div>
                     </div>
                     <div class="form-row">
                         <label for="CONFIRM PASSWORD">CONFIRM PASSWORD</label>
-                        <input type="password" name="conf-pass" id="conf-pass" required>
+                        <input type="password" 
+                        name="conf-pass" 
+                        id="conf-pass" 
+                        placeholder=" "
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        required>
+                        <div class="requirements">
+                            Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+                        </div>
                     </div>
                 </div>
             </div>

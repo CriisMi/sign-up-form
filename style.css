@@ -43,7 +43,7 @@ body {
 }
 
 .form {
-    padding: 20px 0 20px 50px;
+    padding: 20px 0 30px 50px;
     margin: 50px 0 25px 0;
     background-color: #ffffff;
     box-shadow: 0 5px 5px #e2e2e2;
@@ -99,10 +99,6 @@ button, input, select, textarea {
     height: 25px;
     padding: 7px;
     font-size: 14px;
-
-    &:focus {
-        
-    }
 }
 
 .form-row label {
@@ -138,7 +134,21 @@ button, input, select, textarea {
     box-shadow: 3px 3px 3px #e2e2e2;
 }
 
-input:invalid {
-    border: #a71c23;
+.form-row input[type='text']:invalid:not(:focus):not(:placeholder-shown),
+.form-row input[type='email']:invalid:not(:focus):not(:placeholder-shown),
+.form-row input[type='tel']:invalid:not(:focus):not(:placeholder-shown),
+.form-row input[type='password']:invalid:not(:focus):not(:placeholder-shown) {
+    outline: 0;
+    border-color: #cc4949;
+}
 
+.form-row input[type='password']:invalid:focus:not(:placeholder-shown) ~ .requirements{
+    overflow: visible;
+}
+
+.requirements {
+    max-height: 0;
+    overflow: hidden;
+    width: 250px;
+    color: #cc4949;
 }
