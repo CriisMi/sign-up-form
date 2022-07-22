@@ -99,6 +99,10 @@ button, input, select, textarea {
     height: 25px;
     padding: 7px;
     font-size: 14px;
+
+    &:focus {
+        
+    }
 }
 
 .form-row label {
@@ -123,4 +127,18 @@ button, input, select, textarea {
     font-weight: bold;
     color:#224736;
     cursor: pointer;
+}
+
+.form-row input[type='text']:focus,
+.form-row input[type='email']:focus,
+.form-row input[type='tel']:focus,
+.form-row input[type='password']:focus {
+    outline: 0;
+    border-color: #6053cf;
+    box-shadow: 3px 3px 3px #e2e2e2;
+}
+
+input:invalid {
+    border: #a71c23;
+
 }
