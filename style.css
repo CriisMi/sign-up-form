@@ -18,7 +18,19 @@ body {
 
 .left-side {
     min-width: 30%;
-    background-color: #ade9cd;
+    background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-color: #224736;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.credit,
+a {
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
 .right-side {
