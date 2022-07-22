@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 12px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     line-height: 1;
 }
@@ -24,14 +25,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    padding: 100px 0;
     flex: auto;
     align-content: center;
     background-color: #f5f5f5;
 }
 
 .intro {
-    padding: 0 50px;
+    padding: 0 500px 0 50px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .intro > p:last-child {
@@ -50,6 +54,7 @@ body {
 
 .form-title { 
     width: 100%;
+    font-weight: bold;
 }
 
     
@@ -102,8 +107,15 @@ button, input, select, textarea {
     color: #ffffff;
     background-color: #63b68f;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 10px 40px;
     cursor: pointer;
     width: 200px;
+    box-shadow: 1px 5px 5px #e2e2e2;
+}
+
+.log-in {
+    font-weight: bold;
+    color:#224736;
+    cursor: pointer;
 }
