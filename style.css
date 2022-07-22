@@ -4,21 +4,23 @@
 }
 
 body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
     height: 100vh;
     display: flex;
-    line-height: 1em;
+    line-height: 1;
 }
 
 .italic {
     font-style: italic;
 }
 
-.logo {
+.left-side {
     min-width: 30%;
     background-color: #ade9cd;
 }
 
-.content {
+.right-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,19 +35,75 @@ body {
 }
 
 .intro > p:last-child {
-    margin: 1em 0 50px 0;
+    margin-top: 1em;
 }
 
-form {
-    padding: 20px 50px;
+.form {
+    padding: 20px 600px 20px 50px;
+    margin: 50px 0 25px 0;
     background-color: #ffffff;
+    box-shadow: 0 5px 5px #e2e2e2;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
-form > p:first-child {
+.form-title { 
+    width: 100%;
+}
+
+    
+form p:first-child {
     font-size: large;
     margin-bottom: 1em ;
 }
 
 .sign-in {
     padding: 0 50px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-row{
+    margin-bottom: 15px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='tel'],
+.form-row input[type='password'] {
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    height: 25px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 2px;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: #ffffff;
+    background-color: #63b68f;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+    width: 200px;
 }
